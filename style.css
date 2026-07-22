@@ -4,31 +4,32 @@ body {
     overflow: hidden;
 }
 
-/* Główny czarny pasek na całą szerokość ekranu */
+/* Wymuszamy pełną szerokość głównego kontenera */
 .overlay-wrapper {
-    width: 100vw;
-    min-height: 140px;
-    background: black;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
+    width: 100vw !important;
+    min-height: 140px !important;
+    background: black !important;
+    position: relative !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
 }
 
-/* Kontener z giftonami w dwóch wierszach */
+/* Wymuszamy układ dwuwierszowy i szerokość dla elementów ze StreamToEarn */
 .items {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    height: 140px;
-    gap: 6px;
-    position: absolute;
-    left: 100%;
-    width: max-content;
-    animation: marquee 15s linear infinite;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+    align-content: flex-start !important;
+    height: 140px !important;
+    max-height: 140px !important;
+    gap: 8px !important;
+    position: absolute !important;
+    left: 100% !important;
+    width: max-content !important;
+    animation: marquee 20s linear infinite !important;
 }
 
-/* Animacja ciągłego przewijania */
+/* Płynna animacja przewijania */
 @keyframes marquee {
     0% {
         transform: translateX(0);
@@ -38,100 +39,100 @@ body {
     }
 }
 
-/* Style poszczególnych elementów */
+/* Style poszczególnych elementów giftów */
 .event-border {
-    padding: 4px;
-    background: black;
-    border-radius: 9px;
-    display: flex;
+    padding: 4px !important;
+    background: black !important;
+    border-radius: 9px !important;
+    display: flex !important;
 }
 
 .event {
-    background: black;
-    border-radius: 8px;
-    padding: 2px;
-    width: 100px;
-    display: flex;
-    flex-wrap: wrap;
+    background: black !important;
+    border-radius: 8px !important;
+    padding: 2px !important;
+    width: 100px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
 }
 
 .function-name {
-    width: 100%;
-    text-align: center;
-    background: black;
-    color: yellow;
-    font-size: 20px;
+    width: 100% !important;
+    text-align: center !important;
+    background: black !important;
+    color: yellow !important;
+    font-size: 20px !important;
 }
 
 .function-image-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 1%;
-    max-height: 60px;
-    z-index: 2;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    width: 1% !important;
+    max-height: 60px !important;
+    z-index: 2 !important;
 }
 
 .function-icon {
-    max-height: 100%;
-    max-width: 100%;
-    z-index: 1;
+    max-height: 100% !important;
+    max-width: 100% !important;
+    z-index: 1 !important;
 }
 
 .repetition {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 11%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-    color: white;
-    font-weight: bold;
-    font-family: cursive;
-    z-index: 2;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 11% !important;
+    margin: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 2em !important;
+    color: white !important;
+    font-weight: bold !important;
+    font-family: cursive !important;
+    z-index: 2 !important;
 }
 
 .trigger-img-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 60%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    width: 60% !important;
 }
 
 .gift-icon {
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 100% !important;
+    max-width: 100% !important;
 }
 
 .likes-number {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-top: -5px;
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    margin: auto !important;
+    color: #fff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+    margin-top: -5px !important;
 }
 
 .coin-number {
-    margin-bottom: -65%;
-    font-size: 2rem;
+    margin-bottom: -65% !important;
+    font-size: 2rem !important;
 }
 
 .trigger-icon-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 100%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
 }
