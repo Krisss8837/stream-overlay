@@ -8,7 +8,7 @@ body {
 /* Główny kontener paska */
 .banner-container {
     width: 100vw;
-    height: 120px; /* Dopasuj wysokość paska do swoich potrzeb */
+    height: 120px;
     background: black;
     overflow: hidden;
     position: relative;
@@ -20,13 +20,13 @@ body {
 .banner-track {
     display: flex;
     width: max-content;
-    animation: scrollBanner 30s linear infinite; /* 30s to prędkość – im mniejsza liczba, tym szybciej leci */
+    animation: scrollBanner 30s linear infinite;
 }
 
 /* Wygląd obrazka */
 .banner-image {
-    height: 110px; /* Wysokość obrazka dopasowana do paska */
-    width: auto;   /* Zachowanie proporcji */
+    height: 110px;
+    width: auto;
     display: block;
 }
 
