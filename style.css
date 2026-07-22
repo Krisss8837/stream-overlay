@@ -1,0 +1,19 @@
+body {
+    margin:0;
+    background:transparent;
+    font-family:Arial;
+}
+
+#overlay {
+    color:white;
+    text-align:center;
+    text-shadow:0 0 10px black;
+}
+
+h1 {
+    font-size:60px;
+}
+
+p {
+    font-size:30px;
+}
